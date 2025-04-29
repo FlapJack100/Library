@@ -1,0 +1,143 @@
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0eef1;
+    padding: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding-top: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .header {
+    background-color: white;
+    height: 90px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  h1 {
+    text-align: left;
+    margin-left: 40px;
+    font-family: "Poppins", sans-serif;
+  }
+
+  #logInBtn {
+    width: 100px;
+    height: 50px;
+    margin-right: 30px;
+    margin-top: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 17px;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+
+  .btn {
+    width: 150px;
+    height: 60px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  .btn:hover {
+    background-color: #d1d1d1;
+  }
+
+  .book-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    display: inline-block;
+    margin: 20px auto;
+    text-align: center;
+    width: 220px;
+  }
+
+  .book-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+  }
+
+  .book-author,
+  .book-pages {
+    font-size: 14px;
+    margin: 5px 0;
+  }
+
+  .read-btn {
+    background-color: #90ee90;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 8px;
+    width: 100%;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .remove-btn {
+    background-color: #d3d3d3;
+    border: none;
+    padding: 10px;
+    margin-top: 8px;
+    border-radius: 8px;
+    width: 100%;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  dialog {
+    padding: 20px;
+    border-radius: 12px;
+    border: none;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  }
+
+  form div {
+    margin: 10px 10px;
+  }
+
+  form input {
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    width: 100%;
+  }
+
+  form button {
+    padding: 10px 15px;
+    margin-top: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+
+  footer {
+    margin-top: 40px;
+    color: #555;
+    font-size: 14px;
+    font-weight: 800;
+  }
