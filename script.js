@@ -34,5 +34,22 @@ const openDialogBtn = document.getElementById('openDialog');
         bookCard.remove();
       });
 
+      const readBtn = bookCard.querySelector('.read-btn');
+      let isRead = true;
+
+    readBtn.addEventListener('click', () => {
+    isRead = !isRead;
+
+    if (isRead) {
+      readBtn.textContent = 'Read';
+      readBtn.style.backgroundColor = 'green';
+      readBtn.style.color = 'white';
+    } else {
+      readBtn.textContent = 'NoRead';
+      readBtn.style.backgroundColor = 'red';
+      readBtn.style.color = 'white';
+    }
+  });
+      
       bookList.appendChild(bookCard);
     }
