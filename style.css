@@ -5,11 +5,40 @@ html, body {
 
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f0eef1;
+    transition: background 1s ease;
+    background: linear-gradient(135deg, #f0f8ff, #e6e6fa);
+    animation: backgroundFlowDay 20s infinite alternate;
     padding: auto;
     text-align: center;
     display: flex;
     flex-direction: column;
+  }
+.theme-btn {
+  border-radius: 30px 10px ;
+  width: 100px;
+  height: 60px;
+  margin-top: 15px;
+}
+
+.theme-btn:hover {
+  background-color: rgb(100, 100, 135);
+  cursor: pointer;
+}
+  body.dark {
+    background: linear-gradient(135deg, #1e1e2f, #3c3c5c);
+    animation: backgroundFlowNight 20s infinite alternate;
+  }
+  
+  @keyframes backgroundFlowDay {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  @keyframes backgroundFlowNight {
+    0% { background-position: 0% 50%; background-color: #1e1e2f; }
+    50% { background-position: 100% 50%; background-color: #2e2e44; }
+    100% { background-position: 0% 50%; background-color: #3c3c5c; }
   }
 
   .container {

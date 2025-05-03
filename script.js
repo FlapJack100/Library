@@ -53,3 +53,25 @@ const openDialogBtn = document.getElementById('openDialog');
       
       bookList.appendChild(bookCard);
     }
+
+    const themeToggleBtn = document.getElementById('toggleTheme');
+
+// Автоматическое включение тёмной темы после 19:00 или до 6:00
+function autoSetTheme() {
+  const now = new Date();
+  const hour = now.getHours();
+
+  if (hour >= 19 || hour < 6) {
+    document.body.classList.add('dark');
+  } else {
+    document.body.classList.remove('dark');
+  }
+}
+
+// Вызов функции сразу при загрузке
+autoSetTheme();
+
+// Кнопка переключения вручную
+themeToggleBtn.addEventListener('click', () => {
+  document.body.classList.toggle('dark');
+});
